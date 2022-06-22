@@ -8,5 +8,4 @@ for (let i = 1; i <= 10; i++)
 const Exponenta = function (y) {
     console.log(2 ** y)
 }
-
 Exponenta(3)
