@@ -12,7 +12,7 @@ for (let i = 1; i <= 5; i++)
 // 2*. Преобразовать 2 задачу в функцию, принимающую на вход строку, которая и будет выводиться в консоль (как в условии смайлик), а также количество строк для вывода 
 //e.g. function printSmile(stroka, numberOfRows)
 
-x = ""
+let x = ""
 function smile(stroka, numberOfRows) {
     for (let i = 1; i <= numberOfRows; i++) {
         console.log(x += stroka)
