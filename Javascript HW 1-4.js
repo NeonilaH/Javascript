@@ -3,7 +3,6 @@
 
 let age_2 = 18
 let age_3 = 60
-
 const checkAge = function (age_1) {
 
     if (!isNaN(age_1)) {
