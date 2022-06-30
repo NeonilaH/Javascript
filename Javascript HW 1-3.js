@@ -20,4 +20,4 @@ const checkAge = function (age_1) {
     }
 }
 checkAge(21)
-checkAge("yuvytv")
+checkAge("yuvydtv")
