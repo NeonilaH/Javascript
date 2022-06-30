@@ -26,4 +26,3 @@ const checkAge = function (age_1) {
 checkAge(17)
 checkAge(18)
 checkAge(61)
-    
