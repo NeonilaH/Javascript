@@ -11,7 +11,7 @@ function getWordStructure(word) {
     let tempArray = word.toLowerCase().split('')
     let vowelsSum = tempArray.filter(x => vowelsArray.includes(x)).length;
     let consonantsSum = tempArray.filter(x => consonantsArray.includes(x)).length;
-    console.log("Слово " + word + " состоит из " + vowelsSum + " гласных и " + consonantsSum + " согласных букв")
+    console.log("Слово " + word + " состоит из " + vowelsSum + " гласных и " + consonantsSum + " согласных букв.")
 
 }
 getWordStructure('case')
