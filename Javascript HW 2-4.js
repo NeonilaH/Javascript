@@ -13,4 +13,4 @@ function checkPalindrome(word) {
 }
 console.log(checkPalindrome("Abba"))
 console.log(checkPalindrome("abba"))
-console.log(checkPalindrome("bckibu"))
+console.log(checkPalindrome("bnckibu"))
