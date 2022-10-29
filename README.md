@@ -62,12 +62,17 @@ Convert 2* so that the value '2' (the string containing ONLY NUMBER) is omitted 
 4***:
 Convert task 3* so that the age is entered using the prompt function in the linked layout.
 
+***
+
 ## 2nd JS homework with asterisks:
+
+### [Javascript HW 2-1.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%202-1.js)
 
 1. Write a script that will calculate and display the result of raising 2 to the power of 10, starting from the power of 1
 
 1*. Convert 1 task into a function that takes as input the power to which the number 2 will be raised
 
+### []()
 2. Write a script that will output 5 lines to the console in such a way that :) is displayed on the first line, :) :) on the second line, and so on
 Console example:
 ```
@@ -77,10 +82,11 @@ Console example:
 :):):):):)
 :):):):):):)
 ```
-
+### [Javascript HW 2-2.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%202-2.js)
 2*. Convert task 2 into a function that takes a string as input, which will be output to the console (as in the smiley condition), as well as the number of lines to output
 e.g. `function printSmile(line, numberOfRows)`
 
+### [Javascript HW 2-3.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%202-3.js)
 3**. Write a function that takes a word as input. The task of the function is to calculate and output to the console how many vowels and how many consonants are in the word.
 e.g. `function getWordStructure(word)`
 In console:
@@ -88,11 +94,16 @@ In console:
 
 Checks: 'case', 'Case', 'Check-list'
 
+### [Javascript HW 2-4.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%202-4.js)
 4**. Write a function that checks if a word is a palindrome
 e.g. function isPalindrom(word)
 
 Checks: 'abba', 'Abba'
-task 1.
+
+***
+
+## 3rd JS homework
+Task 1.
 
 Write a function that will find and display in the console users registered on 10/09/2021 and 10/10/2021). Array in task1.txt
 
