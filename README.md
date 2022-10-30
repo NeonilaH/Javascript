@@ -2,7 +2,7 @@
 
 ### [Javascript HW 1-1.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%201-1.js)
 
- 1. Create a variable `item_1`
+ 1. Create a variable `item_1`.
  2. Assign the variable `item_1` the number 5.
  3. Print `item_1` to the console.
  4. Create variable `item_2`.
@@ -25,14 +25,14 @@
  21. Print the `item_6` data type to the console as `“item_6 == ” item_6, “item_6_type == ” item_6_type`.
  22. Create variable `item_7` and convert `item_6` to String in it.
  23. Create variable `item_7_type`.
- 24. Assign `item_7_type` variable the type of `item_7` variable
+ 24. Assign `item_7_type` variable the type of `item_7` variable.
  25. Print the item_7 data type to the console as  `“item_7 == ” item_7, “item_7_type == ” item_7_type`.
  26. Create a variable `age_1` and assign the value 10 to it.
  27. Create variable `age_2` and assign value 18 to it.
  28. Create variable `age_3` and assign value 60 to it.
  29. Create an if in which you will check the value of the variable `age_1`.
  30. If `age_1` < `age_2`, print to console `“You don’t have access cause your age is” + age_1 + “It’s less then”`.
- 31. If `age_1` >= `age_2` and `age_1` < `age_3`, Print `“Welcome!”`
+ 31. If `age_1` >= `age_2` and `age_1` < `age_3`, Print `“Welcome!”`.
  32. If `age_1` > `age_3`, Print `“Keep calm and look Culture channel”` to the console.
  33. Otherwise print `"Technical work"`.
 
@@ -71,7 +71,7 @@ Convert task 3* so that the age is entered using the prompt function in the link
 1*. Convert 1 task into a function that takes as input the power to which the number 2 will be raised.
 
 ### []()
-2. Write a script that will output 5 lines to the console in such a way that :) is displayed on the first line, :) :) on the second line, and so on
+2. Write a script that will output 5 lines to the console in such a way that :) is displayed on the first line, :) :) on the second line, and so on.
 Console example:
 ```
 :)
