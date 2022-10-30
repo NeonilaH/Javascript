@@ -38,7 +38,7 @@
 
 ### [Javascript HW 1-2.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%201-2.js)
 
-1*:
+1*.
 Convert the written code in 26-33 into a function that takes `age` as input.
 Example: 
 ```js
@@ -49,15 +49,15 @@ Your transformations
 Print to the console the result of the function with ages 17, 18, 61.
 
 ### [Javascript HW 1-3.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%201-3.js)
-2*:
+2*.
 Convert assignment 1* so that the data type is checked first in the function. And if it is not a Number, an error was thrown.
 
 ### [Javascript HW 1-4.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%201-4.js)
-3**:
+3**.
 Convert 2* so that the value '2' (the string containing ONLY NUMBER) is omitted when converted to number.
 
 ### [Javascript HW 1-5](https://github.com/NeonilaH/Javascript/tree/main/Javascript%20HW%201-5)
-4***:
+4***.
 Convert task 3* so that the age is entered using the prompt function in the linked layout.
 
 ***
