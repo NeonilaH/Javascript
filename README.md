@@ -41,11 +41,10 @@
 1*.
 Convert the written code in 26-33 into a function that takes `age` as input.
 Example: 
-```js
+`
 const checkAge = function(age) {
 Your transformations
-}
-```
+}`.
 Print to the console the result of the function with ages 17, 18, 61.
 
 ### [Javascript HW 1-3.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%201-3.js)
