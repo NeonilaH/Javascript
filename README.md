@@ -36,8 +36,6 @@
  32. If `age_1` > `age_3`, Print `“Keep calm and look Culture channel”` to the console.
  33. Otherwise print `"Technical work"`.
 
-## Tasks with different number of stars :)
-
 ### [Javascript HW 1-2.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%201-2.js)
 
 1*:
@@ -105,17 +103,17 @@ Checks: 'abba', 'Abba'
 ## 3rd JS homework
 
 ### [Javascript HW 3-1.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%203-1.js)
-Task 1.
-Write a function that will find and display in the console users registered on 10/09/2021 and 10/10/2021). Array in task1.txt
+1.
+Write a function that will find and display in the console users registered on 10/09/2021 and 10/10/2021). Array in task1.txt.
 
 ### [Javascript HW 3-2.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%203-2.js)
-Task 2*
+2*.
 Open the task2.json file in VSCode. Copy the JSON from it, paste it into your code (by assigning it to a variable).
 Given an array of objects. Each object is an identification card of a person. We only need to store unique values ​​in this array. Implement a function that will do the job.
 
 ### [Javascript HW 3-3.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%203-3.js)
-Task 2*** Implement reading JSON from the task2.json file using, for example, the fs module. for further use in the function described in the assignment
+2*** Implement reading JSON from the task2.json file using, for example, the fs module. for further use in the function described in the assignment
 
 ### [Javascript HW 3-4.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%203-4.js)
-Task 3**
+3**
 In the file task3.txt you will find the structure of the company and the tasks you need to complete.
