@@ -79,7 +79,7 @@ Console example:
 :):):):):)
 :):):):):):)
 ```
-2*. Convert task 2 into a function that takes a string as input, which will be output to the console (as in the smiley condition), as well as the number of lines to output. e.g. `function printSmile(line, numberOfRows)` .
+ 2*. Convert task 2 into a function that takes a string as input, which will be output to the console (as in the smiley condition), as well as the number of lines to output. e.g. `function printSmile(line, numberOfRows)`.
 
 ### [Javascript HW 2-3.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%202-3.js)
 3**. Write a function that takes a word as input. The task of the function is to calculate and output to the console how many vowels and how many consonants are in the word.
