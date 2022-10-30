@@ -89,9 +89,7 @@ In console:
 Checks: 'case', 'Case', 'Check-list'.
 
 ### [Javascript HW 2-4.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%202-4.js)
-4**. Write a function that checks if a word is a palindrome. e.g. `function isPalindrom(word)`.
-
-Checks: 'abba', 'Abba'.
+4**. Write a function that checks if a word is a palindrome. e.g. `function isPalindrom(word)`. Checks: 'abba', 'Abba'.
 
 ***
 
