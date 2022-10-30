@@ -66,7 +66,7 @@ Convert task 3* so that the age is entered using the prompt function in the link
 
 ### [Javascript HW 2-1.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%202-1.js)
 
-1. Write a script that will calculate and display the result of raising 2 to the power of 10, starting from the power of 1.
+1. Write a script that will calculate and display the result of raising 2 to the power of 10, starting from the power of 1.</br>
 1*. Convert 1 task into a function that takes as input the power to which the number 2 will be raised.
 
 ### [Javascript HW 2-2.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%202-2.js)
