@@ -21,25 +21,25 @@
  17. Create variable `item_6`.
  18. Create variable `item_6_type`.
  19. Set variable `item_6` to 15.
- 20. Assign `item_6`_type variable the type of `item_6` variable.
+ 20. Assign the type of `item_6` variable to `item_6_type` variable.
  21. Print the `item_6` data type to the console as `“item_6 == ” item_6, “item_6_type == ” item_6_type`.
- 22. Create variable `item_7` and convert `item_6` to String in it.
+ 22. Create variable `item_7` and convert `item_6` to string in it.
  23. Create variable `item_7_type`.
- 24. Assign `item_7_type` variable the type of `item_7` variable.
+ 24. Assign the type of `item_7` variable to `item_7_type` variable.
  25. Print the item_7 data type to the console as  `“item_7 == ” item_7, “item_7_type == ” item_7_type`.
  26. Create a variable `age_1` and assign the value 10 to it.
  27. Create variable `age_2` and assign value 18 to it.
  28. Create variable `age_3` and assign value 60 to it.
  29. Create an if in which you will check the value of the variable `age_1`.
  30. If `age_1` < `age_2`, print to console `“You don’t have access cause your age is” + age_1 + “It’s less then”`.
- 31. If `age_1` >= `age_2` and `age_1` < `age_3`, Print `“Welcome!”`.
- 32. If `age_1` > `age_3`, Print `“Keep calm and look Culture channel”` to the console.
+ 31. If `age_1` >= `age_2` and `age_1` < `age_3`, print `“Welcome!”`.
+ 32. If `age_1` > `age_3`, print `“Keep calm and look Culture channel”` to the console.
  33. Otherwise print `"Technical work"`.
 
 ### [Javascript HW 1-2.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%201-2.js)
 
-1*.
-Convert the written code in 26-33 into a function that takes `age` as input.
+1*. 
+Convert the code written in 26-33 into a function that takes `age` as input.
 Example: 
 `
 const checkAge = function(age) {
