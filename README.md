@@ -3,13 +3,13 @@
 ### [Javascript HW 1-1.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%201-1.js)
 
  1. Create a variable `item_1`.
- 2. Assign the variable `item_1` the number 5.
+ 2. Assign the number 5 to the variable `item_1`.
  3. Print `item_1` to the console.
  4. Create variable `item_2`.
- 5. Assign the variable `item_2` the number 3.
+ 5. Assign the number 3 to the variable `item_2`.
  6. Print `item_2` to the console.
  7. Create variable `item_3`.
- 8. Assign the `item_3` variable the addition of `item_1` and `item_2`.
+ 8. Assign the addition of `item_1` and `item_2` to the variable `item_3`.
  9. Print `item_3` to the console.
  10. Create variable `item_4`.
  11. Assign the string 'Yolochka' to the variable `item_4`.
