@@ -49,7 +49,7 @@ Print to the console the result of the function with ages 17, 18, 61.
 
 ### [Javascript HW 1-3.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%201-3.js)
 2*.
-Convert assignment 1* so that the data type is checked first in the function. And if it is not a Number, an error was thrown.
+Convert assignment 1* so that the data type is checked first in the function. And if it is not a Number, an error is thrown.
 
 ### [Javascript HW 1-4.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%201-4.js)
 3**.
