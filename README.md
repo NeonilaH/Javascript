@@ -61,7 +61,7 @@ Convert task 3* so that the age is entered using the prompt function in the link
 
 ***
 
-## 2nd JS homework with asterisks:
+## 2nd JS homework:
 
 ### [Javascript HW 2-1.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%202-1.js)
 
