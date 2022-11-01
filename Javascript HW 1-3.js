@@ -1,7 +1,7 @@
 // 2*. Convert assignment 1* so that the data type is checked first in the function. And if it is not a number, an error is thrown.
 
-let age_2 = 18
-let age_3 = 60
+let age_2 = 18;
+let age_3 = 60;
 const checkAge = function (age_1) {
     if (typeof (age_1) === 'number') 
     {
