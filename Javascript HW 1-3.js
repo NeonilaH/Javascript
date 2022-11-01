@@ -1,4 +1,4 @@
-// 2*. Convert assignment 1* so that the data type is checked first in the function. And if it is not a Number, an error is thrown.
+// 2*. Convert assignment 1* so that the data type is checked first in the function. And if it is not a number, an error is thrown.
 
 let age_2 = 18
 let age_3 = 60
