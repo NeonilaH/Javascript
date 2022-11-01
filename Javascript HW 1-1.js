@@ -1,11 +1,11 @@
-// 1. Create a variable "item_1"
-// 2. Assign number 5 to the variable item_1 
+// 1. Create a variable `item_1`.
+// 2. Assign the number 5 to the variable `item_1`.
 let item_1 = 5;
 
-// 3. Print item_1 to the console
+// 3. Print `item_1` to the console.
 console log(item_1);
 
-// 4. Create a variable "item_2"
+// 4. Create variable `item_2`.
 // 5. Assign number 3 to the variable item_2 
 let item_2 = 3;
 
