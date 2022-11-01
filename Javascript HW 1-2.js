@@ -1,4 +1,5 @@
-// 1*. Convert the code written in 26-33 into a function that takes `age` as input. Example: `const checkAge = function(age) { Your transformations }`. Print to the console the result of the function with ages 17, 18, 61.
+// 1*. Convert the code written in 26-33 into a function that takes `age` as input. Example: `const checkAge = function(age) { Your transformations }`. 
+// Print to the console the result of the function with ages 17, 18, 61.
 
 const checkAge = function (age_1) {
     let age_2 = 18;
