@@ -3,7 +3,7 @@
 let item_1 = 5;
 
 // 3. Print `item_1` to the console.
-console log(item_1);
+console.log(item_1);
 
 // 4. Create variable `item_2`.
 // 5. Assign the number 3 to the variable `item_2`. 
@@ -24,7 +24,7 @@ console.log(item_3);
 let item_4 = "Yolochka";
 
 // 12. Print `item_4` to the console.
-console log(item_4);
+console.log(item_4);
 
 // 13. Display the addition of `item_3` and `item_4` to the console.
 console.log(item_3 + item_4);
@@ -44,7 +44,7 @@ let item_6 = 15;
 let item_6_type = typeof(item_6);
 
 // 21. Print the `item_6` data type to the console as `“item_6 == ” item_6, “item_6_type == ” item_6_type`.
-console.log("item_6 ==" + item_6 + ", " + "item_6_type ==" + item_6_type);
+console.log("item_6 == " + item_6 + ", " + "item_6_type == " + item_6_type);
 
 // 22. Create variable `item_7` and convert `item_6` to string in it.
 let item_7 = item_6.toString();
@@ -54,7 +54,7 @@ let item_7 = item_6.toString();
 let item_7_type = typeof(item_7);
 
 // 25. Print the `item_7` data type to the console as  `“item_7 == ” item_7, “item_7_type == ” item_7_type`.
-console.log("item_7 ==" + item_7 + ​​", " + "item_7_type ==" + item_7_type)
+console.log("item_7 == " + item_7 + ", "+ "item_7_type == " + item_7_type);
 
 // 26. Create a variable `age_1` and assign the value 10 to it.
 let age_1 = 10;
@@ -69,13 +69,14 @@ let age_3 = 60;
 // 30. If `age_1` < `age_2`, print to console `“You don’t have access cause your age is” + age_1 + “It’s less then”`.
 // 31. If `age_1` >= `age_2` and `age_1` < `age_3`, print `“Welcome!”`.
 // 32. If `age_1` > `age_3`, print `“Keep calm and look Culture channel”` to the console.
-// Otherwise print `"Technical work"`.
+// 33. Otherwise print `"Technical work"`.
 if (age_1 < age_2) {
-    console.log("You don't have access cause your age is " + age_1 + ". It's less than ")
-} else if (age_1 >= age_2 && age_1 < age_3) {
+    console.log("You don't have access cause your age is " + age_1 + ". It's less than " + age_2 + ".")
+}
+else if (age_1 >= age_2 && age_1 < age_3) {
     console.log("Welcome!");
 }
 else if (age_1 > age_3) {
     console.log("Keep calm and look culture channel");
 }
-else { console. log("Technical work") }
+else { console.log("Technical work") }
