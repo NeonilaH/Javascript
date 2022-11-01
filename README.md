@@ -13,11 +13,11 @@
  9. Print `item_3` to the console.
  10. Create variable `item_4`.
  11. Assign the string 'Yolochka' to the variable `item_4`.
- 12. Print item_4 to the console.
+ 12. Print `item_4` to the console.
  13. Display the addition of `item_3` and `item_4` to the console.
  14. Print the multiplication of `item_3` and `item_4` to the console.
  15. Create variable `item_5`.
- 16. Assign item_5 to `item_3`.
+ 16. Assign `item_5` to `item_3`.
  17. Create variable `item_6`.
  18. Create variable `item_6_type`.
  19. Set variable `item_6` to 15.
@@ -26,7 +26,7 @@
  22. Create variable `item_7` and convert `item_6` to string in it.
  23. Create variable `item_7_type`.
  24. Assign the type of `item_7` variable to `item_7_type` variable.
- 25. Print the item_7 data type to the console as  `“item_7 == ” item_7, “item_7_type == ” item_7_type`.
+ 25. Print the `item_7` data type to the console as  `“item_7 == ” item_7, “item_7_type == ” item_7_type`.
  26. Create a variable `age_1` and assign the value 10 to it.
  27. Create variable `age_2` and assign value 18 to it.
  28. Create variable `age_3` and assign value 60 to it.
