@@ -9,6 +9,7 @@ function checkPalindrome(word) {
     }
     return 'It is a palindrome';
 }
+
 console.log(checkPalindrome("Abba"))
 console.log(checkPalindrome("abba"))
 console.log(checkPalindrome("bnckibu"))
