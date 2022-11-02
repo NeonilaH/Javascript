@@ -1,6 +1,4 @@
-// 4**. Написать функцию, которая проверяет, является ли слово палиндромом
-// e.g. function isPalindrom(word)
-// Проверки: 'abba', 'Abba'
+// 4**. Write a function that checks if a word is a palindrome. e.g. `function isPalindrom(word)`. Checks: 'abba', 'Abba'.
 
 function checkPalindrome(word) {
     word = word.toLowerCase();
