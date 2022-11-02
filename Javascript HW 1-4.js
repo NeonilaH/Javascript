@@ -3,7 +3,6 @@
 let age_2 = 18
 let age_3 = 60
 const checkAge = function (age_1) {
-
     if (!isNaN(age_1)) {
 
         if (age_1 < age_2) {
@@ -18,6 +17,7 @@ const checkAge = function (age_1) {
         } else {
             console.log("Technical work");
         }
+        
     } else {
         console.log("Error")
     }
