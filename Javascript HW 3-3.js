@@ -1,6 +1,6 @@
-// Task 2*** Реализуйте считывание из JSONки из файла task2.json с помощью, например, модуля fs. для дальнейшего использования в функции, описанной в задании
-        // Task 2*
-        // Дан массив объектов. Каждый объект является идентификационной карточкой человека. Нам нужно хранить только уникальные значения в этом массиве. Реализуйте функцию, которая будет выполнять эту работу.
+// Task 2*** Implement reading JSON from task2.json file using, for example, the fs module. for further use in the function described in the assignment
+         // Task 2*
+         // Given an array of objects. Each object is an identification card of a person. We only need to store unique values in this array. Implement a function that will do the job.
 
 const fs = require('fs');
 const user = JSON.parse(fs.readFileSync("HW 3 data/task2.json"))
