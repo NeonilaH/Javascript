@@ -1,6 +1,4 @@
-// Task 2*
-// Откройте в VSCode task2.json файл. Скопируйте из него JSONку, вставьте в свой код (присвоив в переменную).
-// Дан массив объектов. Каждый объект является идентификационной карточкой человека. Нам нужно хранить только уникальные значения в этом массиве. Реализуйте функцию, которая будет выполнять эту работу.
+// 2*.Open the task2.json file in VSCode. Copy the JSON from it, paste it into your code (by assigning it to a variable). Given an array of objects. Each object is an identification card of a person. We only need to store unique values in this array. Implement a function that will do the job.
 
 const user = 
 [{
