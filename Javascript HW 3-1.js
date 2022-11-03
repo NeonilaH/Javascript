@@ -1,5 +1,4 @@
-// Task 1
-// Написать функцию, которая найдет и выведет в консоль юзеров, зарегистрированных 09.10.2021 и 10.10.2021).
+// 1. Write a function that will find and display in the console users registered on 10/09/2021 and 10/10/2021).
 
 const users = [ 
     {
