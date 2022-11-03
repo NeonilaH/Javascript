@@ -95,11 +95,11 @@ Checks: 'case', 'Case', 'Check-list'.
 ## 3rd JS homework
 
 ### [Javascript HW 3-1.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%203-1.js)
-1. Write a function that will find and display in the console users registered on 10/09/2021 and 10/10/2021). Array in task1.txt.
+1. Write a function that will find and display in the console users registered on 10/09/2021 and 10/10/2021).
 
 ### [Javascript HW 3-2.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%203-2.js)
 2*. Open the task2.json file in VSCode. Copy the JSON from it, paste it into your code (by assigning it to a variable).
-Given an array of objects. Each object is an identification card of a person. We only need to store unique values ​​in this array. Implement a function that will do the job.
+Given an array of objects. Each object is an identification card of a person. We only need to store unique values in this array. Implement a function that will do the job.
 
 ### [Javascript HW 3-3.js](https://github.com/NeonilaH/Javascript/blob/main/Javascript%20HW%203-3.js)
 2***. Implement reading JSON from the task2.json file using, for example, the fs module. for further use in the function described in the assignment.
