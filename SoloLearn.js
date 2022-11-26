@@ -92,3 +92,34 @@ for (i=1, text=""; i<=5; i++) {
     text = i;
     document.write(i + "<br />");
 }
+
+// Fill in the blanks to print EVEN values from 0 to 20 using a for loop:
+var x = 0;
+for (; x <= 20; x += 2 ) {
+   document.write(x); 
+}
+
+var i=0;
+while (i<=10) {
+    document.write(i + "<br />");
+    i++;
+}
+
+// Write a program-timer, that will take the count of seconds as input and output to the console all the seconds until timer stops.
+function main() {
+    var seconds = parseInt(readLine(), 10)
+    // Your code here
+    while (seconds >= 0) {
+        console.log (seconds);
+        seconds--
+    }
+}
+
+// do..while loop will execute the code block once, before checking if the condition is true, and then it will repeat the loop as long as the condition is true.
+var i=20;
+do {  
+    document.write(i + "<br />");
+    i++;  
+}
+while (i<=25); 
+
