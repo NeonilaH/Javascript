@@ -123,3 +123,18 @@ do {
 }
 while (i<=25); 
 
+// break - we use it to "jump out" of a loop and continue executing the code after the loop.
+// continue - breaks only one iteration in the loop, and continues with the next iteration.
+for (i = 0; i <= 10; i++) {
+    if (i == 5) {
+        break; 
+    }
+    document.write(i + "<br />");
+}
+
+for (i = 0; i <= 10; i++) {
+    if (i == 5) {
+        continue;
+    }
+    document.write(i + "<br />");
+}
