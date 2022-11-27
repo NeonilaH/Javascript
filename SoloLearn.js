@@ -148,7 +148,7 @@ for (i = 1; i <= 16; i++) {
     console.log(i)
 }
 
-//The snail climbs up 7 feet each day and slips back 2 feet each night. How many days will it take the snail to get out of a well with the given depth?
+// The snail climbs up 7 feet each day and slips back 2 feet each night. How many days will it take the snail to get out of a well with the given depth?
 function main() {
     var depth = parseInt(readLine(), 10);
 
@@ -199,7 +199,7 @@ else {
     alert("Thanks for staying with us");
 }
 
-//Creating Your Own Objects
+// Creating Your Own Objects
 function person(name, age, color) {
     this.name = name;
     this.age = age;
@@ -227,3 +227,101 @@ function Flight(flightNumber, status) {
     this.number = flightNumber;
     this.status = status;
 };
+
+//  Define a method named changeName for our person, which is a function, that takes a parameter name and assigns it to the name property of the object.
+
+function person(name, age) {
+    this.name = name;  
+    this.age = age;
+    this.changeName = function (name) {
+        this.name = name;
+    }
+}
+
+var p = new person("David", 21);
+p.changeName("John");
+
+document.write(p.name);
+
+/*A store manager needs a program to set discounts for products.
+The program should take the product ID, price and discount as input and output the discounted price. However, the changePrice method, which should calculate the discount, is incomplete. Fix it!*/
+
+function main() {
+    var prodID = readLine();
+    var price = parseInt(readLine(),10);
+    var discount = parseInt(readLine(),10);
+    
+    var prod1= new Product(prodID, price);
+    console.log(prod1.prodID + " price: " + prod1.price);
+    
+    prod1.changePrice(discount);
+    console.log(prod1.prodID + " new price: " + prod1.price);
+}
+
+function Product(prodID, price) {
+    this.prodID = prodID;
+    this.price = price;
+
+    this.changePrice = function(discount) {
+        //your code goes here
+        this.price = price - price*discount/100
+    }
+}
+
+/*Contact Manager
+You are working on a Contact Manager app.
+You have created the contact object constructor, which has two arguments, name and number.
+You need to add a print() method to the object, which will output the contact data to the console in the following format: name: number
+The given code declares two objects and calls their print() methods. Complete the code by defining the print() method for the objects.*/
+function contact(name, number) {
+    this.name = name;
+    this.number = number;
+    this.print = print
+}
+function print(){
+    console.log(this.name + ': ' + this.number)
+}
+var a = new contact("David", 12345);
+var b = new contact("Amy", 987654321);
+a.print();
+b.print();
+
+/*The array you are given represents the menu of breakfast options available at the hotel.
+The Chef decided to replace one of the options with "Fluffy Pancakes".
+Write a program to take the index as input, replace the element with that index with "Fluffy Pancakes", and output the new menu to the console as an array.*/
+function main() {
+    var breakfasts = ['Cinnamon Doughnuts', 'Waffles', 'Granola', 'Chorizo Burrito', 'French Toast'];
+    var index = parseInt(readLine(), 10)
+    breakfasts[index] = "Fluffy Pancakes"
+    console.log(breakfasts)    
+}
+
+// Combining Arrays. JavaScript's concat() method allows you to join arrays and create an entirely new array.
+var c1 = ["HTML", "CSS"];
+var c2 = ["JS", "C++"];
+var courses = c1.concat(c2);
+document.write(courses[2]);
+
+/*The player receives points after passing each level of a game.
+The program given takes the number of passed levels as input, followed by the points gained for each level, and creates the corresponding array of points.
+Complete the program to calculate and output to the console the sum of all gained points.*/
+
+function main() {
+    //take the number of passed levels
+    var levels = parseInt(readLine(),10);
+    var points = new Array();
+    
+    var count = 0;
+    while(count<levels){
+        var elem = parseInt(readLine(),10);
+        points[count] = elem;
+        count++;
+    }
+     var sum = points[0];
+    //calculate the sum of points 
+    for (i=1;i< points.length ;i++){
+        sum = sum + points[i];
+    }
+    //output
+   console.log(sum);
+}
