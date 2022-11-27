@@ -250,7 +250,6 @@ function main() {
     var prodID = readLine();
     var price = parseInt(readLine(),10);
     var discount = parseInt(readLine(),10);
-    
     var prod1= new Product(prodID, price);
     console.log(prod1.prodID + " price: " + prod1.price);
     
@@ -261,7 +260,6 @@ function main() {
 function Product(prodID, price) {
     this.prodID = prodID;
     this.price = price;
-
     this.changePrice = function(discount) {
         //your code goes here
         this.price = price - price*discount/100
@@ -309,8 +307,7 @@ Complete the program to calculate and output to the console the sum of all gaine
 function main() {
     //take the number of passed levels
     var levels = parseInt(readLine(),10);
-    var points = new Array();
-    
+    var points = new Array();    
     var count = 0;
     while(count<levels){
         var elem = parseInt(readLine(),10);
@@ -328,11 +325,9 @@ function main() {
 
 // Create a function that returns the century depending on the year given as a parameter.
 function main() {
-    var year = parseInt(readLine(), 10)
-    
+    var year = parseInt(readLine(), 10)    
     //the output
-    console.log(calcCent(year));
-    
+    console.log(calcCent(year));    
 }
 //complete the function
 function calcCent(x){
