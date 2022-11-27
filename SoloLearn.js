@@ -333,3 +333,24 @@ function main() {
 function calcCent(x){
     return Math.ceil(x/100)
 }
+
+// Let's create a program that will ask the user to input a number and alert its square root.
+var n = prompt("Enter a number", "");
+alert("The square root of " + n + " is " + Math.sqrt(n));
+
+
+//The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds). It will continue calling the function until clearInterval() is called or the window is closed.
+function myAlert() {
+    alert("Hi");
+}
+setInterval(myAlert, 3000);
+
+// Let's create a program that prints the current time to the browser once every second.
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    document.body.innerHTML = hours+":"+mins+":"+secs;
+}
+setInterval(printTime, 1000);
