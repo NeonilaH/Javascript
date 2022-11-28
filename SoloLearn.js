@@ -380,3 +380,51 @@ function main() {
     var newArray = prices.map(el => el + increase)
     console.log(newArray)
 }
+
+// The following example gets all paragraph elements of the page and changes their content:
+<p>hi</p>
+<p>hello</p>
+<p>hi</p>
+<script>
+var arr = document.getElementsByTagName("p");
+for (var x = 0; x < arr.length; x++) {
+  arr[x].innerHTML = "Hi there";
+}
+</script>
+
+// The script will result in the following HTML:
+<p>Hi there</p>
+<p>Hi there</p>
+<p>Hi there</p>
+
+// select all child nodes of an element and change their content:
+function setText() {
+    var a = document.getElementById("demo");
+     var arr = a.childNodes;
+     for(var x=0;x<arr.length;x++) {
+       arr[x].innerHTML = "new text";
+     }
+}
+//calling the function with setTimeout to make sure the HTML is loaded
+setTimeout(setText, 1000);
+
+// The code above changes the text color and width of the div element.
+window.onload = function() {
+    var x = document.getElementById("demo");
+    x.style.color = '#6600FF';
+    x.style.width = '100px';
+};
+
+// Create a new text node, and you append it to an existing element
+// calling the function in window.onload to make sure the HTML is loaded
+window.onload = function() {
+    //creating a new paragraph
+    var p = document.createElement("p");
+    var node = document.createTextNode("Some new text");
+    //adding the text to the paragraph
+    p.appendChild(node);
+
+    var div = document.getElementById("demo");
+    //adding the paragraph to the div
+    div.appendChild(p);
+};
