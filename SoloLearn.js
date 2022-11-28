@@ -428,3 +428,72 @@ window.onload = function() {
     //adding the paragraph to the div
     div.appendChild(p);
 };
+
+// This removes the paragraph with id="p1" from the page.
+//calling the function in window.onload to make sure the HTML is loaded
+window.onload = function() {
+    var parent = document.getElementById("demo");
+    var child = document.getElementById("p1");
+    parent.removeChild(child);
+};
+
+// create a new paragraph element that replaces the existing p1 paragraph.
+//calling the function in window.onload to make sure the HTML is loaded
+window.onload = function() {
+    var p = document.createElement("p");
+    var node = document.createTextNode("This is new");
+    p.appendChild(node);
+
+    var parent = document.getElementById("demo");
+    var child = document.getElementById("p1");
+    parent.replaceChild(p, child);
+};
+
+// Animations
+//html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+	<body>
+		<div id="container">
+            <div id="box"> </div>
+        </div>
+	</body>
+</html>
+//css
+#container {
+    width: 200px;
+    height: 200px;
+    background: green;
+    position: relative;
+}
+#box {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: absolute;
+}
+// js
+window.onload = function() {
+    var pos = 0; 
+   //our box element
+   var box = document.getElementById('box');
+   var t = setInterval(move, 10);
+ 
+   function move() {
+       if(pos >= 150) {
+           clearInterval(t);
+       }
+       else {
+           pos += 1;
+           box.style.left = pos+'px';
+       }
+   }
+};
+
+
+
+
+
