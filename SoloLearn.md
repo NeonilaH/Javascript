@@ -642,3 +642,22 @@ for (let x of scores) {
 }
 console.log(count)
 ```
+### Functions in ECMAScript 6
+We can skip typing function and return, as well as some parentheses and braces.
+```js
+const greet = x => "Welcome " + x;
+
+alert(greet("David"));
+```
+```js
+const x = () => alert("Hi");
+x();
+```
+We use the forEach method of the array to call a function for each element:
+```js
+var arr = [2, 3, 7, 8];
+
+arr.forEach(function(el) {
+    console.log(el * 2);
+});
+```
