@@ -556,3 +556,16 @@ function validate() {
 }
 
 
+// Template Literals in ES6
+let name = 'David';
+let msg = 'Welcome ' + name + '!';
+console.log(msg);
+
+let name = 'David';
+let msg = `Welcome ${name}!`;
+console.log(msg);
+
+let a = 8;
+let b = 34;
+let msg = `The sum is ${a+b}`;
+console.log(msg);
