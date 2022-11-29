@@ -370,9 +370,10 @@ Let's create a program that will ask the user to input a number and alert its sq
 ```js
 var n = prompt("Enter a number", "");
 alert("The square root of " + n + " is " + Math.sqrt(n));
+```
 
-
-//The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds). It will continue calling the function until clearInterval() is called or the window is closed.
+The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds). It will continue calling the function until clearInterval() is called or the window is closed.
+```js
 function myAlert() {
     alert("Hi");
 }
@@ -423,9 +424,7 @@ The following example gets all paragraph elements of the page and changes their 
 <p>hi</p>
 <p>hello</p>
 <p>hi</p>
-```
 
-```js
 <script>
 var arr = document.getElementsByTagName("p");
 for (var x = 0; x < arr.length; x++) {
@@ -434,11 +433,13 @@ for (var x = 0; x < arr.length; x++) {
 </script>
 ```
 The script will result in the following HTML:
+```html
 <p>Hi there</p>
 <p>Hi there</p>
 <p>Hi there</p>
-
-// select all child nodes of an element and change their content:
+```
+Select all child nodes of an element and change their content:
+```js
 function setText() {
     var a = document.getElementById("demo");
      var arr = a.childNodes;
@@ -446,10 +447,10 @@ function setText() {
        arr[x].innerHTML = "new text";
      }
 }
-//calling the function with setTimeout to make sure the HTML is loaded
+// calling the function with setTimeout to make sure the HTML is loaded
 setTimeout(setText, 1000);
-
-// The code above changes the text color and width of the div element.
+``
+// The code changes the text color and width of the div element.
 window.onload = function() {
     var x = document.getElementById("demo");
     x.style.color = '#6600FF';
