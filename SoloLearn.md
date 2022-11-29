@@ -449,16 +449,19 @@ function setText() {
 }
 // calling the function with setTimeout to make sure the HTML is loaded
 setTimeout(setText, 1000);
-``
-// The code changes the text color and width of the div element.
+```
+The code changes the text color and width of the div element.
+```js
 window.onload = function() {
     var x = document.getElementById("demo");
     x.style.color = '#6600FF';
     x.style.width = '100px';
 };
+```
 
-// Create a new text node, and you append it to an existing element
-// calling the function in window.onload to make sure the HTML is loaded
+Create a new text node, and you append it to an existing element.
+```js
+//calling the function in window.onload to make sure the HTML is loaded
 window.onload = function() {
     //creating a new paragraph
     var p = document.createElement("p");
@@ -470,16 +473,19 @@ window.onload = function() {
     //adding the paragraph to the div
     div.appendChild(p);
 };
+```
 
-// This removes the paragraph with id="p1" from the page.
+This removes the paragraph with id="p1" from the page. 
+```js
 //calling the function in window.onload to make sure the HTML is loaded
 window.onload = function() {
     var parent = document.getElementById("demo");
     var child = document.getElementById("p1");
     parent.removeChild(child);
 };
-
-// create a new paragraph element that replaces the existing p1 paragraph.
+```
+Create a new paragraph element that replaces the existing p1 paragraph.
+```js
 //calling the function in window.onload to make sure the HTML is loaded
 window.onload = function() {
     var p = document.createElement("p");
@@ -490,9 +496,9 @@ window.onload = function() {
     var child = document.getElementById("p1");
     parent.replaceChild(p, child);
 };
-
-// Animations
-//html
+```
+### Animations
+```html
 <!DOCTYPE html>
 <html>
 	<head>
@@ -504,7 +510,8 @@ window.onload = function() {
         </div>
 	</body>
 </html>
-//css
+```
+```css
 #container {
     width: 200px;
     height: 200px;
@@ -517,7 +524,8 @@ window.onload = function() {
     background: red;
     position: absolute;
 }
-// js
+```
+```js
 window.onload = function() {
     var pos = 0; 
    //our box element
@@ -534,16 +542,19 @@ window.onload = function() {
        }
    }
 };
+```
 
-// Image Slider. Now we can create a sample image slider project. The images will be changed using "Next" and "Prev" buttons.
-//HTML:
+### Image Slider. 
+Now we can create a sample image slider project. The images will be changed using "Next" and "Prev" buttons.
+```html
 <div>
   <button onclick="prev()"> Prev </button>
   <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg" 
     width="200px" height="100px"/>
   <button onclick="next()"> Next </button>
 </div>
-//CSS
+```
+```CSS
 button {
     margin-top:30px;
     float:left;
@@ -554,7 +565,8 @@ img {
     margin-right:10px;
     margin-left:10px;
 }
-//JS
+```
+```js
  var images = [
     'http://www.sololearn.com/uploads/slider/1.jpg', 
     'http://www.sololearn.com/uploads/slider/2.jpg', 
@@ -577,7 +589,9 @@ function prev() {
     }
     slider.src = images[num];
 }
-// let's create a form with two inputs and one button. The text in both fields should be the same and not blank to pass the validation.
+```
+### Form
+Let's create a form with two inputs and one button. The text in both fields should be the same and not blank to pass the validation.
 //html
 <form onsubmit="return validate()" method="post">
     Number: <input type="text" name="num1" id="num1" /><br />
