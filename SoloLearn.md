@@ -661,3 +661,10 @@ arr.forEach(function(el) {
     console.log(el * 2);
 });
 ```
+```js
+const arr = [2, 3, 7, 8];
+
+arr.forEach(v => {
+    console.log(v * 2);
+});
+```
