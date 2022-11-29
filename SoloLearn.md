@@ -592,13 +592,14 @@ function prev() {
 ```
 ### Form
 Let's create a form with two inputs and one button. The text in both fields should be the same and not blank to pass the validation.
-//html
+```html
 <form onsubmit="return validate()" method="post">
     Number: <input type="text" name="num1" id="num1" /><br />
     Repeat: <input type="text" name="num2" id="num2" /><br />
     <input type="submit" value="Submit" />
 </form>
-//js
+```
+```js
 function validate() {
     var n1 = document.getElementById('num1');
     var n2 = document.getElementById('num2');
@@ -610,23 +611,28 @@ function validate() {
     alert("The values should be equal and not blank");
     return false;
 }
-
-
-// Template Literals in ES6
+```
+## ES6
+### Template Literals in ES6
+```js
 let name = 'David';
 let msg = 'Welcome ' + name + '!';
 console.log(msg);
-
+```
+```js
 let name = 'David';
 let msg = `Welcome ${name}!`;
 console.log(msg);
-
+```
+```js
 let a = 8;
 let b = 34;
 let msg = `The sum is ${a+b}`;
 console.log(msg);
-
-// Students need to score at least 70 points to pass an exam. The given program declares an array with results. Write a program to count and output to the console the number of students who pass the exam.
+```
+### Loops in ECMAScript 6
+Students need to score at least 70 points to pass an exam. The given program declares an array with results. Write a program to count and output to the console the number of students who pass the exam.
+```js
 let scores = [68,95,54,84,77,75,63,74,69,80,71,63]
 var count = 0
 for (let x of scores) {
@@ -636,3 +642,4 @@ for (let x of scores) {
     
 }
 console.log(count)
+```
