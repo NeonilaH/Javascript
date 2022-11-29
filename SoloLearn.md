@@ -162,8 +162,9 @@ for (i = 1; i <= 16; i++) {
     console.log(i)
 }
 ```
-```js
+
 The snail climbs up 7 feet each day and slips back 2 feet each night. How many days will it take the snail to get out of a well with the given depth?
+```js
 function main() {
     var depth = parseInt(readLine(), 10);
 
@@ -266,9 +267,10 @@ p.changeName("John");
 
 document.write(p.name);
 ```
-/*A store manager needs a program to set discounts for products.
-The program should take the product ID, price and discount as input and output the discounted price. However, the changePrice method, which should calculate the discount, is incomplete. Fix it!*/
 
+A store manager needs a program to set discounts for products.
+The program should take the product ID, price and discount as input and output the discounted price. However, the changePrice method, which should calculate the discount, is incomplete. Fix it!
+```js
 function main() {
     var prodID = readLine();
     var price = parseInt(readLine(),10);
@@ -288,12 +290,13 @@ function Product(prodID, price) {
         this.price = price - price*discount/100
     }
 }
-
-/*Contact Manager
+```
+Contact Manager
 You are working on a Contact Manager app.
 You have created the contact object constructor, which has two arguments, name and number.
 You need to add a print() method to the object, which will output the contact data to the console in the following format: name: number
 The given code declares two objects and calls their print() methods. Complete the code by defining the print() method for the objects.*/
+```js
 function contact(name, number) {
     this.name = name;
     this.number = number;
@@ -306,27 +309,31 @@ var a = new contact("David", 12345);
 var b = new contact("Amy", 987654321);
 a.print();
 b.print();
-
-/*The array you are given represents the menu of breakfast options available at the hotel.
+```
+The array you are given represents the menu of breakfast options available at the hotel.
 The Chef decided to replace one of the options with "Fluffy Pancakes".
-Write a program to take the index as input, replace the element with that index with "Fluffy Pancakes", and output the new menu to the console as an array.*/
+Write a program to take the index as input, replace the element with that index with "Fluffy Pancakes", and output the new menu to the console as an array.
+```js
 function main() {
     var breakfasts = ['Cinnamon Doughnuts', 'Waffles', 'Granola', 'Chorizo Burrito', 'French Toast'];
     var index = parseInt(readLine(), 10)
     breakfasts[index] = "Fluffy Pancakes"
     console.log(breakfasts)    
 }
-
-// Combining Arrays. JavaScript's concat() method allows you to join arrays and create an entirely new array.
+```
+Combining Arrays. 
+JavaScript's concat() method allows you to join arrays and create an entirely new array.
+```js
 var c1 = ["HTML", "CSS"];
 var c2 = ["JS", "C++"];
 var courses = c1.concat(c2);
 document.write(courses[2]);
+```
 
-/*The player receives points after passing each level of a game.
+The player receives points after passing each level of a game.
 The program given takes the number of passed levels as input, followed by the points gained for each level, and creates the corresponding array of points.
 Complete the program to calculate and output to the console the sum of all gained points.*/
-
+```js
 function main() {
     //take the number of passed levels
     var levels = parseInt(readLine(),10);
@@ -345,8 +352,10 @@ function main() {
     //output
    console.log(sum);
 }
+```
 
-// Create a function that returns the century depending on the year given as a parameter.
+Create a function that returns the century depending on the year given as a parameter.
+```js
 function main() {
     var year = parseInt(readLine(), 10)    
     //the output
@@ -356,8 +365,9 @@ function main() {
 function calcCent(x){
     return Math.ceil(x/100)
 }
-
-// Let's create a program that will ask the user to input a number and alert its square root.
+```
+Let's create a program that will ask the user to input a number and alert its square root.
+```js
 var n = prompt("Enter a number", "");
 alert("The square root of " + n + " is " + Math.sqrt(n));
 
@@ -367,8 +377,9 @@ function myAlert() {
     alert("Hi");
 }
 setInterval(myAlert, 3000);
-
-// Let's create a program that prints the current time to the browser once every second.
+```
+Let's create a program that prints the current time to the browser once every second.
+```js
 function printTime() {
     var d = new Date();
     var hours = d.getHours();
@@ -377,8 +388,9 @@ function printTime() {
     document.body.innerHTML = hours+":"+mins+":"+secs;
 }
 setInterval(printTime, 1000);
-
-// The program you are given takes year, month and day as input. Create a function that takes them as arguments and returns the corresponding day of the week.
+```
+The program you are given takes year, month and day as input. Create a function that takes them as arguments and returns the corresponding day of the week.
+```js
 function main() {
     var year = parseInt(readLine(), 10);
     var month = parseInt(readLine(), 10);
@@ -394,8 +406,9 @@ function main() {
     var index = d.getDay()
     return names[index]
  }
-
-// You are working on a Store Manager program, which stores the prices in an array. You need to add functionality to increase the prices by the given amount. The increase variable is taken from user input. You need to increase all the prices in the given array by that amount and output to the console the resulting array.
+```
+You are working on a Store Manager program, which stores the prices in an array. You need to add functionality to increase the prices by the given amount. The increase variable is taken from user input. You need to increase all the prices in the given array by that amount and output to the console the resulting array.
+```js
 function main() {
     var increase = parseInt(readLine(), 10);
     var prices = [98.99, 15.2, 20, 1026];
@@ -403,19 +416,24 @@ function main() {
     var newArray = prices.map(el => el + increase)
     console.log(newArray)
 }
+```
 
-// The following example gets all paragraph elements of the page and changes their content:
+The following example gets all paragraph elements of the page and changes their content:
+```html
 <p>hi</p>
 <p>hello</p>
 <p>hi</p>
+```
+
+```js
 <script>
 var arr = document.getElementsByTagName("p");
 for (var x = 0; x < arr.length; x++) {
   arr[x].innerHTML = "Hi there";
 }
 </script>
-
-// The script will result in the following HTML:
+```
+The script will result in the following HTML:
 <p>Hi there</p>
 <p>Hi there</p>
 <p>Hi there</p>
