@@ -638,8 +638,7 @@ var count = 0
 for (let x of scores) {
     if (x >= 70) {
         count++
-    }
-    
+    }   
 }
 console.log(count)
 ```
