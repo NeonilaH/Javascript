@@ -187,7 +187,7 @@ You are given a program that takes Team 1 and Team 2 football teams goals as inp
 Complete the function to take Team 1 and Team 2 goals as arguments and output the final result of the match:
 - "Team 1 won", if Team 1's score is higher than Team 2's score
 - "Team 2 won", if Team 2's score is higher than Team 1's score
-- "Draw", if the scores are equal*/
+- "Draw", if the scores are equal
 ```js
 let goalsTeam1 = 0
 let goalsTeam2 = 1
@@ -235,7 +235,7 @@ document.write(p2.name);
 
 Bob was hired as an airport information officer and needs to generate status messages for each flight․ Let’s help him!
 Complete the given program by fixing the constructor, making a flight object, and assign it to given variable to correctly execute the corresponding message.
-Flight ID and the flight status(landed, on time, delayed, etc.) are taken as input.*/
+Flight ID and the flight status(landed, on time, delayed, etc.) are taken as input.
 ```js
 function main() {
     //take flight number and its status
@@ -295,7 +295,7 @@ Contact Manager
 You are working on a Contact Manager app.
 You have created the contact object constructor, which has two arguments, name and number.
 You need to add a print() method to the object, which will output the contact data to the console in the following format: name: number
-The given code declares two objects and calls their print() methods. Complete the code by defining the print() method for the objects.*/
+The given code declares two objects and calls their print() methods. Complete the code by defining the print() method for the objects.
 ```js
 function contact(name, number) {
     this.name = name;
@@ -332,7 +332,7 @@ document.write(courses[2]);
 
 The player receives points after passing each level of a game.
 The program given takes the number of passed levels as input, followed by the points gained for each level, and creates the corresponding array of points.
-Complete the program to calculate and output to the console the sum of all gained points.*/
+Complete the program to calculate and output to the console the sum of all gained points.
 ```js
 function main() {
     //take the number of passed levels
