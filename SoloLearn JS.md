@@ -614,7 +614,7 @@ function validate() {
 }
 ```
 ## ES6
-### Template Literals in ES6
+### Template Literals
 ```js
 let name = 'David';
 let msg = 'Welcome ' + name + '!';
@@ -631,7 +631,7 @@ let b = 34;
 let msg = `The sum is ${a+b}`;
 console.log(msg);
 ```
-### Loops in ECMAScript 6
+### Loops
 Students need to score at least 70 points to pass an exam. The given program declares an array with results. Write a program to count and output to the console the number of students who pass the exam.
 ```js
 let scores = [68,95,54,84,77,75,63,74,69,80,71,63]
@@ -643,7 +643,7 @@ for (let x of scores) {
 }
 console.log(count)
 ```
-### Functions in ECMAScript 6
+### Functions
 We can skip typing function and return, as well as some parentheses and braces.
 ```js
 const greet = x => "Welcome " + x;
@@ -654,7 +654,7 @@ alert(greet("David"));
 const x = () => alert("Hi");
 x();
 ```
-We use the forEach method of the array to call a function for each element:
+We use the `forEach` method of the array to call a function for each element:
 ```js
 var arr = [2, 3, 7, 8];
 
@@ -670,7 +670,7 @@ arr.forEach(v => {
 });
 ```
 Object method assign() allows us to combine multiple sources into one target to create a single new object.
-Object.assign() is also useful for creating a duplicate of an existing object. Order is important because properties in the second parameter will be overridden by properties of the same name in third parameter, and so on.
+`Object.assign()` is also useful for creating a duplicate of an existing object. Order is important because properties in the second parameter will be overridden by properties of the same name in third parameter, and so on.
 ``` js
 let person = {
     name: 'Jack',
