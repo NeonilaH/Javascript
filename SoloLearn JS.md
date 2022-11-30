@@ -748,6 +748,7 @@ console.log(two); // 2
 
 You are making a program to calculate the sum of any number of values.
 Complete the given function so that it takes as parameters as many numbers as needed and returns the sum.
+
 ```js
 function Add(...nums){
     let sum=0;
@@ -761,10 +762,10 @@ function Add(...nums){
     console.log(Add(4,14,5,9,14));
     console.log(Add(2,36));
 ```
-    ### Class
-    ### prototype method
+### Class
+### prototype method
    
-   ```js
+```js
     class Rectangle {
         constructor(height, width) {
           this.height = height;
@@ -783,12 +784,12 @@ function Add(...nums){
       const square = new Rectangle(5, 5);
       
       console.log(square.area); // 25
-      ```
+```
 
-      ### Class
-      ### static method
+### Class
+### static method
 
-      ```js
+```js
       class Point {
         constructor(x, y) {
           this.x = x;
@@ -807,4 +808,4 @@ function Add(...nums){
       const p2 = new Point(3, 8);
       
       console.log(Point.distance(p1, p2));
-      ```
+```
