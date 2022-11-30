@@ -748,7 +748,7 @@ console.log(two); // 2
 
 You are making a program to calculate the sum of any number of values.
 Complete the given function so that it takes as parameters as many numbers as needed and returns the sum.
-```js`
+```js
 function Add(...nums){
     let sum=0;
     for(let num of nums){
