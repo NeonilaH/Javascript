@@ -763,7 +763,8 @@ function Add(...nums){
 ```
     ### Class
     ### prototype method
-    ```js
+   
+   ```js
     class Rectangle {
         constructor(height, width) {
           this.height = height;
