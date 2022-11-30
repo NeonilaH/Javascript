@@ -723,3 +723,87 @@ let [one, , two] = a();
 console.log(one); // 1
 console.log(two); // 2
 ```
+
+
+### Array Destructuring
+```js
+let arr = ['1', '2', '3'];
+
+let [one, two, three] = arr;
+
+console.log(one); // 1
+console.log(two); // 2
+console.log(three); // 3
+```
+```js
+let a = () => {
+    return [1, 3, 2];
+};
+
+let [one, , two] = a();
+
+console.log(one); // 1
+console.log(two); // 2
+```
+
+You are making a program to calculate the sum of any number of values.
+Complete the given function so that it takes as parameters as many numbers as needed and returns the sum.
+```js`
+function Add(...nums){
+    let sum=0;
+    for(let num of nums){
+    sum+=num;
+    }
+    return sum;
+    }
+    
+    console.log(Add(1,2,3));
+    console.log(Add(4,14,5,9,14));
+    console.log(Add(2,36));
+```
+    ### Class
+    ### prototype method
+    ```js
+    class Rectangle {
+        constructor(height, width) {
+          this.height = height;
+          this.width = width;
+        }
+        
+        get area() {
+          return this.calcArea();
+        }
+      
+        calcArea() {
+          return this.height * this.width;
+        }
+      }
+      
+      const square = new Rectangle(5, 5);
+      
+      console.log(square.area); // 25
+      ```
+
+      ### Class
+      ### static method
+
+      ```js
+      class Point {
+        constructor(x, y) {
+          this.x = x;
+          this.y = y;
+        }
+      
+        static distance(a, b) {
+          const dx = a.x - b.x;
+          const dy = a.y - b.y;
+      
+          return Math.hypot(dx, dy);
+        }
+      }
+      
+      const p1 = new Point(7, 2);
+      const p2 = new Point(3, 8);
+      
+      console.log(Point.distance(p1, p2));
+      ```
