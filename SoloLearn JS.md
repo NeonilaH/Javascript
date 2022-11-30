@@ -8,6 +8,7 @@ if (course == 1) {
     document.write("<h1>JavaScript Tutorial</h1>");
 }
 ```
+
 ```js
 let score = 1;
 if (score >= 88) {
@@ -689,7 +690,8 @@ console.log(newStudent.age); // 20
 console.log(newStudent.sex); // male
 console.log(newStudent.xp); // 2
 ```
-Using assign() to create a duplicate object without creating a reference (mutating) to the base object.
+Using `assign()` to create a duplicate object without creating a reference (mutating) to the base object.
+```js
 let person = {
     name: 'Jack',
     age: 18
@@ -700,7 +702,7 @@ newPerson.name = 'Bob';
 
 console.log(person.name); // Jack
 console.log(newPerson.name); // Bob
-
+```
 ### Array Destructuring
 ```js
 let arr = ['1', '2', '3'];
