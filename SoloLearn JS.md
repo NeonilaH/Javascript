@@ -668,3 +668,56 @@ arr.forEach(v => {
     console.log(v * 2);
 });
 ```
+Object method assign() allows us to combine multiple sources into one target to create a single new object.
+Object.assign() is also useful for creating a duplicate of an existing object. Order is important because properties in the second parameter will be overridden by properties of the same name in third parameter, and so on.
+``` js
+let person = {
+    name: 'Jack',
+    age: 18,
+    sex: 'male'
+};
+let student = {
+    name: 'Bob',
+    age: 20,
+    xp: '2'
+};
+
+let newStudent = Object.assign({}, person, student);
+
+console.log(newStudent.name); // Bob
+console.log(newStudent.age); // 20
+console.log(newStudent.sex); // male
+console.log(newStudent.xp); // 2
+```
+Using assign() to create a duplicate object without creating a reference (mutating) to the base object.
+let person = {
+    name: 'Jack',
+    age: 18
+};
+
+let newPerson = Object.assign({}, person);
+newPerson.name = 'Bob';
+
+console.log(person.name); // Jack
+console.log(newPerson.name); // Bob
+
+### Array Destructuring
+```js
+let arr = ['1', '2', '3'];
+
+let [one, two, three] = arr;
+
+console.log(one); // 1
+console.log(two); // 2
+console.log(three); // 3
+```
+```js
+let a = () => {
+    return [1, 3, 2];
+};
+
+let [one, , two] = a();
+
+console.log(one); // 1
+console.log(two); // 2
+```
