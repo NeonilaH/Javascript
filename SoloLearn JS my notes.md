@@ -83,15 +83,11 @@ switch (color) {
 ```
 A `for` loop that prints numbers 1 through 5:
 ```js
-for (i = 1; i <= 5; i++) {
-    document.write(i + "<br />");
+for (i = 0; i <= 5; i++) {
+    console.log(i)
 }
 ```
-```js
-for (i = 1; i <= 5; i++) {
-    document.write(i);
-}
-```
+
 ```js
 var i = 1;
 for (; i <= 5; i++) {
