@@ -70,19 +70,19 @@ func(4)
 let color = "yellow";
 switch (color) {
     case "blue":
-        document.write("This is blue.");
-        break;
+        console.log("This is blue.");
+        ;
     case "red":
-        document.write("This is red.");
-        break;
+        console.log("This is red.");
+        ;
     case "green":
-        document.write("This is green.");
-        break;
+        console.log("This is green.");
+        ;
     case "orange":
-        document.write("This is orange.");
-        break;
+        console.log("This is orange.");
+        ;
     default:
-        document.write("Color not found.");
+        console.log("Color not found.");
 }
 ```
 A `for` loop that prints numbers 1 through 5:
