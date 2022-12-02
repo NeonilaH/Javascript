@@ -41,6 +41,7 @@ switch (day) {
 }
 ```
 ```js
+function func (themeNumber){
 switch (themeNumber) {
     case 1:
         console.log("Light");
@@ -61,7 +62,9 @@ switch (themeNumber) {
     case 5:
         console.log("Indigo")
         break;
+	}
 }
+func(4)
 ```
 ```js
 let color = "yellow";
