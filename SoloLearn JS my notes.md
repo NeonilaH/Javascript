@@ -23,20 +23,21 @@ else {
     console.log("fail");
 }
 ```
+## The `switch` statement
 ```js
 let day = 2;
 switch (day) {
     case 1:
-        document.write("Monday");
+        console.log("Monday");
         break;
     case 2:
-        document.write("Tuesday");
+        console.log("Tuesday");
         break;
     case 3:
-        document.write("Wednesday");
+        console.log("Wednesday");
         break;
     default:
-        document.write("Another day");
+        console.log("Another day");
 }
 ```
 ```js
