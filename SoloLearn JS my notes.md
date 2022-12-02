@@ -81,6 +81,7 @@ switch (color) {
         console.log("Color not found.");
 }
 ```
+## The `for` loop
 A `for` loop that prints numbers 1 through 5:
 ```js
 for (i = 0; i <= 5; i++) {
@@ -93,7 +94,9 @@ var i = 1;
 for (; i <= 5; i++) {
     document.write(i + "<br />");
 }
+```
 
+```js
 for (i = 1, text = ""; i <= 5; i++) {
     text = i;
     document.write(i + "<br />");
