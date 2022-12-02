@@ -1,3 +1,5 @@
+## The `if`, `else if`, `else` statement
+
 ```js
 let course = 1;
 if (course == 1) {
