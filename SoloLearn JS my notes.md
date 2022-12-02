@@ -92,7 +92,7 @@ for (i = 0; i <= 5; i++) {
 ```js
 var i = 1;
 for (; i <= 5; i++) {
-    document.write(i + "<br />");
+    console.log(i);
 }
 ```
 
