@@ -31,4 +31,17 @@ countMs('document'); // 1
 countMs('Mermaid'); // 2
 countMs('code'); // 0
 ```
-4.
+4. Write the 'removeVowels' function that takes the 'doc' string and returns a string with all the letters from the 'doc' except the vowels.
+```js
+function removeVowels(doc) {
+    let result = '';
+    let vowels = 'aeiouyAEIOUY';
+ 
+    for (let letter of doc) {
+      if(!vowels.includes(letter)) {
+        result+=letter
+      }
+    }
+  return result
+}
+```
