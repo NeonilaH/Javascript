@@ -21,7 +21,7 @@ function countMs(text) {
     var count = 0;
     for (let letter of text) {
         if (letter === 'M' || letter === 'm') {
-            count++
+            count++;
         }
     }
     return count
@@ -39,11 +39,13 @@ function removeVowels(doc) {
  
     for (let letter of doc) {
       if(!vowels.includes(letter)) {
-        result+=letter
+        result+=letter;
       }
     }
   return result
 }
+
+removeVowels('document');
 ```
 5. Implement the `makeAbbr` function that accepts the `words` string and returns an uppercase abbreviation. The `words` string contains one or more words separated by a single space.
 ```js
@@ -51,9 +53,12 @@ function makeAbbr(words) {
   let abbreviation = words[0];
   for (let i = 0; i <= words.length; i++) {
     if (words[i] === ' ') {
-      abbreviation += words[i + 1]
+      abbreviation += words[i + 1];
     }
   }
   return abbreviation.toUpperCase()
 }
+
+makeAbbr('central processing unit');
+makeAbbr('national aeronautics space administration');
 ```
