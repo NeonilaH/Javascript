@@ -62,3 +62,16 @@ function makeAbbr(words) {
 makeAbbr('central processing unit');
 makeAbbr('national aeronautics space administration');
 ```
+6. Create the `decryptMessage` function that accepts the `message` string and returns a string with the characters from the `message` but in the reverse order.
+```js
+function decryptMessage(message) {
+
+  let result = '';
+  for (let i = message.length - 1; i >= 0; i--) {
+    result += message[i];
+  }
+  return result;
+}
+
+decryptMessage('central processing unit') 
+```
