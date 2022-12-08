@@ -5,7 +5,7 @@ function getStringLength(input) {
   return input.length
 }
 ```
-2. Implement the 'isSubstring' function that accepts 2 parameters: 'phrase' and 'part'. It should return true if the 'phrase' contains the 'part' or false otherwise.
+2. Implement the `isSubstring` function that accepts 2 parameters: `phrase` and `part`. It should return true if the `phrase` contains the `part` or false otherwise.
 ```js
 function isSubstring(phrase, part) {
   return phrase.includes(part)
