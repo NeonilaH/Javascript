@@ -20,11 +20,15 @@ isSubstring('string', 'bring'); // false
 function countMs(text) {
     var count = 0;
     for (let letter of text) {
-
         if (letter === 'M' || letter === 'm') {
             count++
         }
     }
     return count
 }
+
+countMs('document'); // 1
+countMs('Mermaid'); // 2
+countMs('code'); // 0
 ```
+4.
