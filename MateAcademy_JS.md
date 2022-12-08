@@ -48,7 +48,7 @@ function removeVowels(doc) {
 5. Implement the `makeAbbr` function that accepts the `words` string and returns an uppercase abbreviation. The `words` string contains one or more words separated by a single space.
 ```js
 function makeAbbr(words) {
-  let abbreviation = words[0]
+  let abbreviation = words[0];
   for (let i = 0; i <= words.length; i++) {
     if (words[i] === ' ') {
       abbreviation += words[i + 1]
