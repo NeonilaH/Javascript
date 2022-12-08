@@ -15,3 +15,16 @@ isSubstring('string', 's'); // true
 isSubstring('string', 'ring'); // true
 isSubstring('string', 'bring'); // false
 ```
+3. Implement the `countMs` function that accepts the `text` string and returns the number of `m` letters in it (uppercase and lowercase).
+```js
+function countMs(text) {
+    var count = 0;
+    for (let letter of text) {
+
+        if (letter === 'M' || letter === 'm') {
+            count++
+        }
+    }
+    return count
+}
+```
