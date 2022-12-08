@@ -2,13 +2,13 @@
 1. Implement the `getStringLength` function that accepts the `input` string and returns its length (number of characters in it).
 ```js
 function getStringLength(input) {
-  return input.length
+  return input.length;
 }
 ```
 2. Implement the `isSubstring` function that accepts 2 parameters: `phrase` and `part`. It should return true if the `phrase` contains the `part` or false otherwise.
 ```js
 function isSubstring(phrase, part) {
-  return phrase.includes(part)
+  return phrase.includes(part);
 }
 
 isSubstring('string', 's'); // true
@@ -24,7 +24,7 @@ function countMs(text) {
             count++;
         }
     }
-    return count
+    return count;
 }
 
 countMs('document'); // 1
@@ -42,7 +42,7 @@ function removeVowels(doc) {
         result+=letter;
       }
     }
-  return result
+  return result;
 }
 
 removeVowels('document');
@@ -56,7 +56,7 @@ function makeAbbr(words) {
       abbreviation += words[i + 1];
     }
   }
-  return abbreviation.toUpperCase()
+  return abbreviation.toUpperCase();
 }
 
 makeAbbr('central processing unit');
