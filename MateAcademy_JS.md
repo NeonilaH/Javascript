@@ -73,5 +73,5 @@ function decryptMessage(message) {
   return result;
 }
 
-decryptMessage('central processing unit') 
+decryptMessage('central processing unit');
 ```
