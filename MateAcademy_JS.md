@@ -90,7 +90,7 @@ function isWerewolf(target) {
   for (let i = result.length - 1; i >= 0; i -= 1) {
     newResult += result[i];
   }
-    return result === newResult;
+  return result === newResult;
 }
 ```
 
