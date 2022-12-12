@@ -45,7 +45,7 @@ function removeVowels(doc) {
   return result;
 }
 
-removeVowels('document');
+removeVowels('document'); //dcmnt
 ```
 5. Implement the `makeAbbr` function that accepts the `words` string and returns an uppercase abbreviation. The `words` string contains one or more words separated by a single space.
 ```js
@@ -59,8 +59,8 @@ function makeAbbr(words) {
   return abbreviation.toUpperCase();
 }
 
-makeAbbr('central processing unit');
-makeAbbr('national aeronautics space administration');
+makeAbbr('central processing unit'); // CPU
+makeAbbr('national aeronautics space administration'); // NASA
 ```
 6. Create the `decryptMessage` function that accepts the `message` string and returns a string with the characters from the `message` but in the reverse order.
 ```js
@@ -73,7 +73,7 @@ function decryptMessage(message) {
   return result;
 }
 
-decryptMessage('central processing unit');
+decryptMessage('central processing unit'); // tinu gnissecorp lartnec
 ```
 
 7. Create the `isWerewolf` function that accepts the `target` string and returns `true` if it's a werewolf or `false` if it isn't. A werewolf is a word or sentence that you can read the same in both directions (left to right and vice versa) ignoring case, spaces, and punctuation.
@@ -93,8 +93,8 @@ function isWerewolf(target) {
   console.log(result === newResult);
 }
 
-isWerewolf('Pop Kop'); //false
-isWerewolf('Was it a rat I saw?'); //true
+isWerewolf('Pop Kop'); // false
+isWerewolf('Was it a rat I saw?'); // true
 ```
 
 
