@@ -82,7 +82,7 @@ function isWerewolf(target) {
   var result = '';
   for (let letter of target) {
     if ((!' '.includes(letter)) && (letter.toLowerCase() !== letter.toUpperCase())) {
-      result += letter;
+      result += letter.toUpperCase();
     }
   }
 
@@ -90,8 +90,11 @@ function isWerewolf(target) {
   for (let i = result.length - 1; i >= 0; i -= 1) {
     newResult += result[i];
   }
-  return result === newResult;
+  console.log(result === newResult);
 }
+
+isWerewolf('Pop Kop'); //false
+isWerewolf('Was it a rat I saw?'); //true
 ```
 
 
