@@ -99,5 +99,22 @@ isWerewolf('Pop Kop'); // false
 isWerewolf('Was it a rat I saw?'); // true
 ```
 
+8. We have improved our program for collecting statistics from Misha's webinars. After collecting statistics, it sends data to the server in the form of a `111001010111011` string, where `1` is the student who understood the topic, and 0, unfortunately, did not.
+But it would be helpful to understand how many percent of the students learned the material, this will show how effective the webinar was.
+Create the `getSuccessRate` function that accepts the `statistic` string and returns the percentage of students who understood the material, rounded to the nearest integer (use the `Math.round` method). Please note: if the input string is empty, return `0`.
+```js
+function getSuccessRate(statistic) {
 
-
+if (statistic == ''){
+  return 0;
+} else {
+    let sum = 0;
+ 
+    for (let i=0; i<statistic.length; i++){
+      sum+=parseInt(statistic[i]);
+    }
+  
+    return Math.round(sum/statistic.length*100);
+  }
+}
+```
