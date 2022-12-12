@@ -110,11 +110,11 @@ if (statistic == ''){
 } else {
     let sum = 0;
  
-    for (let i=0; i<statistic.length; i++){
-      sum+=parseInt(statistic[i]);
+    for (let i = 0; i < statistic.length; i++) {
+      sum += parseInt(statistic[i])
     }
   
-    return Math.round(sum/statistic.length*100);
+    return Math.round(sum / statistic.length * 100);
   }
 }
 ```
