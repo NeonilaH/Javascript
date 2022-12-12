@@ -75,3 +75,25 @@ function decryptMessage(message) {
 
 decryptMessage('central processing unit');
 ```
+
+7. Create the `isWerewolf` function that accepts the `target` string and returns `true` if it's a werewolf or `false` if it isn't. A werewolf is a word or sentence that you can read the same in both directions (left to right and vice versa) ignoring case, spaces, and punctuation.
+```js
+function isWerewolf(target) {
+    var result = '';
+      for (let letter of target) {
+      if((!' '.includes(letter)) && 
+      (letter.toLowerCase() !== letter.toUpperCase())) {
+        result+=letter.toUpperCase();
+      }
+    }
+
+    var newResult = '';
+    for (let i = result.length - 1; i >= 0; i -= 1) {
+      newResult += result[i];
+    }
+    return result===newResult
+}
+```
+
+
+
