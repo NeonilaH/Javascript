@@ -53,7 +53,7 @@ removeVowels('document'); //dcmnt
 ```js
 function makeAbbr(words) {
   let abbreviation = words[0];
-  for (let i = 0; i <= words.length; i++) {
+  for (let i = 0; i < words.length; i++) {
     if (words[i] === ' ') {
       abbreviation += words[i + 1];
     }
