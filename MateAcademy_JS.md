@@ -38,13 +38,13 @@ countMs('code'); // 0
 function removeVowels(doc) {
     let result = '';
     let vowels = 'aeiouyAEIOUY';
- 
+
     for (let letter of doc) {
-      if(!vowels.includes(letter)) {
-        result+=letter;
-      }
+        if (!vowels.includes(letter)) {
+            result += letter;
+        }
     }
-  return result;
+    return result;
 }
 
 removeVowels('document'); //dcmnt
