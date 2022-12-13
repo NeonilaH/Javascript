@@ -138,4 +138,8 @@ function createArray(N) {
     }
     return arr;
 }
+
+createArray(1); // [1]
+createArray(3); // [1, 2, 3]
+createArray(0); // []
 ```
