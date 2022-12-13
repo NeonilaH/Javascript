@@ -104,17 +104,24 @@ But it would be helpful to understand how many percent of the students learned t
 Create the `getSuccessRate` function that accepts the `statistic` string and returns the percentage of students who understood the material, rounded to the nearest integer (use the `Math.round` method). Please note: if the input string is empty, return `0`.
 ```js
 function getSuccessRate(statistic) {
-
-if (statistic == ''){
-  return 0;
-} else {
-    let sum = 0;
- 
-    for (let i = 0; i < statistic.length; i++) {
-      sum += parseInt(statistic[i])
+    if (statistic === '') {
+        return 0;
     }
-  
-    return Math.round(sum / statistic.length * 100);
-  }
+
+    let count = 0;
+
+    for (const i of statistic) {
+        if (i === '1') {
+            count++;
+        }
+    };
+
+    return Math.round(count * 100 / statistic.length);
 }
+
+getSuccessRate(''); // 0
+getSuccessRate('11100'); // 60
+getSuccessRate('1100'); // 50
+getSuccessRate('000000'); // 0
+getSuccessRate('11111'); // 100
 ```
