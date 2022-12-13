@@ -125,3 +125,17 @@ getSuccessRate('1100'); // 50
 getSuccessRate('000000'); // 0
 getSuccessRate('11111'); // 100
 ```
+
+## Array Basics
+1. Write the `createArray` function that accepts the integer `N` and returns an array containing integers from `1` to `N` inclusive.
+```js
+function createArray(N) {
+
+    let arr = [];
+
+    for (let i = 1; i <= N; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+```
