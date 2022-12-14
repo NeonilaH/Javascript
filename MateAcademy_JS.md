@@ -130,12 +130,12 @@ getSuccessRate('11111'); // 100
 1. Write the `createArray` function that accepts the integer `N` and returns an array containing integers from `1` to `N` inclusive.
 ```js
 function createArray(N) {
-
     let arr = [];
 
     for (let i = 1; i <= N; i++) {
         arr.push(i);
     }
+    
     return arr;
 }
 
@@ -147,11 +147,12 @@ createArray(0); // []
 2. For the robots on the line to assemble correctly, it is necessary to mark the parts. Different parts of the robot consist of a different number of details. Let's make stickers for them! Write the `makeStickers` function that accepts the `detailsCount` integer and the `robotPart` string. The function returns an array of strings in the following format: `{{robotPart}} detail #{{n}}` (for example, `Hand detail #1`). Please note: return an empty array if `detailsCount = 0`.
 ```js
 function makeStickers(detailsCount, robotPart) {
-
     let N = [];
+    
     for (let i = 1; i <= detailsCount; i++) {
         N.push(`${robotPart} detail #${i}`);
     }
+    
     return N;
 }
 
