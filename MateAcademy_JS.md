@@ -160,3 +160,22 @@ makeStickers(3, 'Body'); // ['Body detail #1', 'Body detail #2', 'Body detail #3
 makeStickers(4, 'Head'); // ['Head detail #1', 'Head detail #2', 'Head detail #3', 'Head detail #4']
 makeStickers(0, 'Foot'); // []
 ```
+
+3. Implement the `doublePower` function that accepts the array of powers — `currentPowers`, and returns a new array of doubled powers.
+```js
+function doublePower(currentPowers) {
+    let doublePowers = [];
+
+    for (let i = 0; i < currentPowers.length; i++) {
+        doublePowers.push(currentPowers[i] * 2);
+    }
+
+    return doublePowers;
+}
+
+doublePower([100, 150, 200, 220]); // [200, 300, 400, 440]
+doublePower([45, 34, 56, 67]); // [90, 68, 112, 134]
+doublePower([]); // []
+```
+
+4.
