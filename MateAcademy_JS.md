@@ -143,3 +143,19 @@ createArray(1); // [1]
 createArray(3); // [1, 2, 3]
 createArray(0); // []
 ```
+
+2. For the robots on the line to assemble correctly, it is necessary to mark the parts. Different parts of the robot consist of a different number of details. Let's make stickers for them! Write the `makeStickers` function that accepts the `detailsCount` integer and the `robotPart` string. The function returns an array of strings in the following format: `{{robotPart}} detail #{{n}}` (for example, `Hand detail #1`). Please note: return an empty array if `detailsCount = 0`.
+```js
+function makeStickers(detailsCount, robotPart) {
+
+    let N = [];
+    for (let i = 1; i <= detailsCount; i++) {
+        N.push(`${robotPart} detail #${i}`);
+    }
+    return N;
+}
+
+makeStickers(3, 'Body'); // ['Body detail #1', 'Body detail #2', 'Body detail #3']
+makeStickers(4, 'Head'); // ['Head detail #1', 'Head detail #2', 'Head detail #3', 'Head detail #4']
+makeStickers(0, 'Foot'); // []
+```
