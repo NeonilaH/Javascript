@@ -178,4 +178,22 @@ doublePower([45, 34, 56, 67]); // [90, 68, 112, 134]
 doublePower([]); // []
 ```
 
-4.
+4. Let's complicate our robots! Now they can convert motion commands into the correct signal and move according to them: 
+`'forward'` means `y + 1`;
+`'back'` means `y - 1`;
+`'right'` means `x + 1`;
+`'left'` means `x - 1`.
+But it would be great if the robot knew its current location without GPS.
+
+To do this, implement the getLocation function, that accepts 2 parameters:
+
+`coordinates` — the array of initial coordinates in the `[x, y]` form;
+`commands` — the array with command history in the `['command1', 'command2', 'command3' ...]` form.
+The function should return an array of final coordinates `([x, y])` after movements according to the commands.
+
+For example, we have the coordinates = `[2, 1]` and commands = `['left', 'back', 'back']` arrays:
+
+coordinates after the first command — `[1, 1]` (1 step left);
+coordinates after the second command — `[1, 0]` (1 step back);
+coordinates after the third command — `[1, -1]` (1 step back);
+the result is the `[1, -1]` array.
