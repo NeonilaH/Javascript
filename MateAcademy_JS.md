@@ -192,3 +192,29 @@ coordinates after the first command — `[1, 1]` (1 step left);
 coordinates after the second command — `[1, 0]` (1 step back);
 coordinates after the third command — `[1, -1]` (1 step back);
 the result is the `[1, -1]` array.
+```js
+function getLocation (coordinates, commands) {
+  let x = coordinates[0];
+  let y = coordinates[1];
+
+  for (const command of commands) {
+    if (command === 'back') {
+      y--;
+    }
+
+    if (command === 'forward') {
+      y++;
+    }
+
+    if (command === 'left') {
+      x--;
+    }
+
+    if (command === 'right') {
+      x++;
+    }
+  }
+
+  return [x, y];
+}
+```
