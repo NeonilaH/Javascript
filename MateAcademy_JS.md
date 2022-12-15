@@ -241,3 +241,29 @@ function getPlan(startProduction, numberOfMonths, percent) {
 
 getPlan(10, 4, 30); // [13, 16, 20, 26]
 ```
+6. The first batch of robots is ready. Now they need to be tested. All robots are unique, and each has its own speed. In this task, you need to find the robots' lowest, highest, and average speed. Implement the `getSpeedStatistic` function, that accepts the `testResults` array of robots' speeds and returns statistics as an array with 3 numbers: the first one is the lowest speed; the second is the highest speed; the last one is the average speed, rounded down (use `Math.floor`).
+Please note: if the testResults array is empty, return `[0, 0, 0]`.
+```js
+function getSpeedStatistic(testResults) {
+
+    if (testResults.length === 0) {
+        return [0, 0, 0];
+    }
+
+    let min = testResults[0];
+    let max = testResults[0];
+    let sum = 0;
+
+    for (const test of testResults) {
+        sum += test;
+        if (test < min) {
+            min = test;
+        }
+        else if (test > max) {
+            max = test;
+        }
+    }
+    let avarage = Math.floor(sum / testResults.length);
+    return [min, max, avarage];
+}
+```
