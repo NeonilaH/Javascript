@@ -266,4 +266,8 @@ function getSpeedStatistic(testResults) {
     let avarage = Math.floor(sum / testResults.length);
     return [min, max, avarage];
 }
+
+getSpeedStatistic([]); // [0, 0, 0]
+getSpeedStatistic([10]); // [10, 10, 10]
+getSpeedStatistic([8, 9, 3, 12]); // [3, 12, 8]
 ```
