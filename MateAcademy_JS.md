@@ -217,4 +217,27 @@ function getLocation (coordinates, commands) {
 
   return [x, y];
 }
+
+getLocation([0, 0], ['forward', 'right']); // [1, 1]
+```
+
+5. And now it's time to increase the production of our robots! Implement the `getPlan` function that takes 3 arguments:
+`startProduction` — the number of robots we currently produce per month;
+`numberOfMonth`s — the number of months for the production growth;
+`percent` — the expected percentage increase in production each month.
+The function should return an array with goals for the given `numberOfMonth`. Please note: the goal for the next month is based on the previous month.
+If the number of robots is a fraction, round it down using the `Math.floor`.
+
+```js
+function getPlan(startProduction, numberOfMonths, percent) {
+    const goals = [];
+    let currentProduction = startProduction;
+    for (i = 1; i <= numberOfMonths; i++) {
+        currentProduction += Math.floor(currentProduction * percent / 100);
+        goals.push(currentProduction);
+    }
+    return goals;
+}
+
+getPlan(10, 4, 30); // [13, 16, 20, 26]
 ```
