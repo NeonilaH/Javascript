@@ -281,11 +281,11 @@ function compareRobots(firstRobotResults, secondRobotResults) {
     let firstSum = 0;
     let secondSum = 0;
 
-    for (first of firstRobotResults) {
+    for (let first of firstRobotResults) {
         firstSum += first;
     }
 
-    for (second of secondRobotResults) {
+    for (let second of secondRobotResults) {
         secondSum += second;
     }
 
