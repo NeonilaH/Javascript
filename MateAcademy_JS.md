@@ -8,8 +8,8 @@ function calculateProfit(amount, percent, period) {
 
     for (let i = 1; i <= period; i++) {
         total += total * percent / 100;
-
     }
+    
     return Math.floor(total - amount);
 }
 
