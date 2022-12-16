@@ -1,22 +1,3 @@
-## Loops
-1. Implement the `calculateProfit` function that accepts 3 parameters: `amount` — the initial amount that we deposit;  `percent` — annual interest rate;
-`period` — the number of years (the time for which the money is deposited). The function should calculate and return the total net profit for the entire period.
-```js
-function calculateProfit(amount, percent, period) {
-
-    let total = amount;
-
-    for (let i = 1; i <= period; i++) {
-        total += total * percent / 100;
-    }
-    
-    return Math.floor(total - amount);
-}
-
-console.log(calculateProfit(1000, 5, 1))
-console.log(calculateProfit(12500, 3, 12))
-```
-
 ## Working with Strings
 1. Implement the `getStringLength` function that accepts the `input` string and returns its length (number of characters in it).
 ```js
@@ -326,7 +307,7 @@ compareRobots([1, 3, 4], [1, 1, 4, 5]); // 'Second robot for sale!' (8 < 11)
 ```
 
 ## Additional tasks
-Write the `checkNumber` function that accepts an integer `number` and checks it against 3 criteria:
+1. Write the `checkNumber` function that accepts an integer `number` and checks it against 3 criteria:
 is this number positive?
 is this an even number?
 is this number divisible by 10?
@@ -335,4 +316,21 @@ The function should return an array with the results of the checks as booleans: 
 function checkNumber(number) {
 return [number > 0, number % 2 === 0, number % 10 === 0]
   }
+```
+2. Implement the `calculateProfit` function that accepts 3 parameters: `amount` — the initial amount that we deposit;  `percent` — annual interest rate;
+`period` — the number of years (the time for which the money is deposited). The function should calculate and return the total net profit for the entire period.
+```js
+function calculateProfit(amount, percent, period) {
+
+    let total = amount;
+
+    for (let i = 1; i <= period; i++) {
+        total += total * percent / 100;
+    }
+    
+    return Math.floor(total - amount);
+}
+
+console.log(calculateProfit(1000, 5, 1))
+console.log(calculateProfit(12500, 3, 12))
 ```
