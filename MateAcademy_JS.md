@@ -324,3 +324,15 @@ compareRobots([12, 4, 13], [1, 1, 4, 5, 12]); // 'First robot for sale!' (29 > 2
 compareRobots([9, 7, 9], [1, 3, 4, 5, 12]); // 'Both robots for sale!' (25 = 25)
 compareRobots([1, 3, 4], [1, 1, 4, 5]); // 'Second robot for sale!' (8 < 11)
 ```
+
+## Additional tasks
+Write the `checkNumber` function that accepts an integer `number` and checks it against 3 criteria:
+is this number positive?
+is this an even number?
+is this number divisible by 10?
+The function should return an array with the results of the checks as booleans: `true` or `false`.
+```js
+function checkNumber(number) {
+return [number > 0, number % 2 === 0, number % 10 === 0]
+  }
+```
