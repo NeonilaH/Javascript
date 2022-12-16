@@ -339,3 +339,15 @@ function calculateProfit(amount, percent, period) {
 calculateProfit(1000, 5, 1); // 50
 calculateProfit(12500, 3, 12); // 5322
 ```
+3. Implement the `getArraysSum` function that accepts two arrays of numbers of equal length and returns the sum of all the elements of these arrays.
+```js
+function getArraysSum(arr1, arr2) {
+
+  let sum = 0;
+  for (let i = 0; i < arr1.length; i++){
+    sum += arr1[i] + arr2[i];
+  }
+
+  return sum;
+}
+```
