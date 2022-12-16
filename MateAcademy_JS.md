@@ -271,3 +271,32 @@ getSpeedStatistic([]); // [0, 0, 0]
 getSpeedStatistic([10]); // [10, 10, 10]
 getSpeedStatistic([8, 9, 3, 12]); // [3, 12, 8]
 ```
+
+7. Let's write the `compareRobots` function that accepts two arrays. The first array is `firstRobotResults` — the weight of the goods delivered during a day by the first robot, and the second array is `secondRobotResults` — by the second one. Check which robot can carry more weight, and return a recommendation which robot is worth buying: 
+8. `'First robot for sale!'` — if the first robot carries more weight; 
+`'Second robot for sale!'` — if the second robot carries more weight;
+`'Both robots for sale!'` — if both robots carry the same weight.
+```js
+  let firstSum = 0;
+  let secondSum = 0;
+
+  for (let first of firstRobotResults){
+    firstSum += first;
+  }
+
+  for (let second of secondRobotResults){
+    secondSum += second;
+  }
+
+  if (firstSum > secondSum) {
+    return `First robot for sale!`
+  }
+  else if (firstSum < secondSum) {
+    return `Second robot for sale!`
+  }
+  else {
+    return `Both robots for sale!`
+  }  
+
+}
+```
