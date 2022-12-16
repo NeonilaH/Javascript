@@ -277,7 +277,7 @@ getSpeedStatistic([8, 9, 3, 12]); // [3, 12, 8]
 `'Second robot for sale!'` — if the second robot carries more weight;
 `'Both robots for sale!'` — if both robots carry the same weight.
 ```js
-  function compareRobots(firstRobotResults, secondRobotResults) {
+function compareRobots(firstRobotResults, secondRobotResults) {
     let firstSum = 0;
     let secondSum = 0;
 
@@ -290,13 +290,13 @@ getSpeedStatistic([8, 9, 3, 12]); // [3, 12, 8]
     }
 
     if (firstSum > secondSum) {
-        return `First robot for sale!`
+        return `First robot for sale!`;
     }
     else if (firstSum < secondSum) {
-        return `Second robot for sale!`
+        return `Second robot for sale!`;
     }
     else {
-        return `Both robots for sale!`
+        return `Both robots for sale!`;
     }
 
 }
