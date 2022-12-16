@@ -351,3 +351,18 @@ function getArraysSum(arr1, arr2) {
   return sum;
 }
 ```
+4. Implement the `combineArrays` function that accepts 2 arrays of numbers of the same size (`first` and `second`) and returns an array of numbers, where `result[i]` is the sum of `first[i]` and `second[i]`.
+```js
+function combineArrays(first, second) {
+
+  let result = [];
+  for (let i = 0; i < first.length; i++) {
+    result.push(first[i] + second[i])
+  }
+  return result
+}
+
+combineArrays([1, 2, 5], [3, 6, 1]); // [4, 8, 6]
+combineArrays([1], [6]); // [7]
+combineArrays([], []); // []
+```
