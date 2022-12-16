@@ -316,6 +316,11 @@ The function should return an array with the results of the checks as booleans: 
 function checkNumber(number) {
 return [number > 0, number % 2 === 0, number % 10 === 0]
   }
+  
+checkNumber(3); // [true, false, false]
+checkNumber(10); // [true, true, true]
+checkNumber(0); // [false, true, true]
+checkNumber(-1); // [false, false, false]  
 ```
 2. Implement the `calculateProfit` function that accepts 3 parameters: `amount` — the initial amount that we deposit;  `percent` — annual interest rate;
 `period` — the number of years (the time for which the money is deposited). The function should calculate and return the total net profit for the entire period.
@@ -331,6 +336,6 @@ function calculateProfit(amount, percent, period) {
     return Math.floor(total - amount);
 }
 
-console.log(calculateProfit(1000, 5, 1))
-console.log(calculateProfit(12500, 3, 12))
+calculateProfit(1000, 5, 1); // 50
+calculateProfit(12500, 3, 12); // 5322
 ```
