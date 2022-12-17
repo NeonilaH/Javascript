@@ -391,3 +391,24 @@ splitString('abc'); // ['ab', 'c_']
 splitString(' '); // [' _']
 splitString(''); // []
 ```
+6. Write the `scrollingText` function that:
+accepts the `word` string;
+sequentially rearranges all characters in the string from zero index to the last one;
+returns an array with the given string and all the received combinations in the uppercase.
+For example, for the `'robot'` we have:
+take the first character r and put it to the end of the word — `'obotr'`;
+take the current first character of the `'obotr'` (`o`) and put it to the end — `'botro'` and so on.
+```js
+function scrollingText(word) {
+  let arr = [];
+  let upWord = word.toUpperCase();
+
+  for (let i = 0; i < word.length; i++) {
+    arr.push(upWord.slice(i) + upWord.slice(0, i));
+  }
+
+  return arr;
+}
+
+scrollingText('robot');
+```
