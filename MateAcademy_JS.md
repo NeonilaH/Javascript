@@ -370,17 +370,18 @@ combineArrays([], []); // []
 Please note: if the `string` contains an odd number of characters, add an `_` after the last character.
 ```js
 function splitString(str) {
+
   if (str.length % 2 !== 0) {
     str = str + "_";
   }
+  
   let arr = str.split('')
   let newArr = [];
 
   for (let i = 0; i < arr.length; i += 2) {
-
     newArr.push(arr[i] + arr[i + 1])
-
   }
+  
   return newArr
 }
 
