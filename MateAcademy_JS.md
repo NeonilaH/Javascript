@@ -366,3 +366,27 @@ combineArrays([1, 2, 5], [3, 6, 1]); // [4, 8, 6]
 combineArrays([1], [6]); // [7]
 combineArrays([], []); // []
 ```
+5. Implement the `splitString` function that accepts the `str` string, splits it into parts of 2 characters, and then returns an array of the resulting parts.
+Please note: if the `string` contains an odd number of characters, add an `_` after the last character.
+```js
+function splitString(str) {
+  if (str.length % 2 !== 0) {
+    str = str + "_";
+  }
+  let arr = str.split('')
+  let newArr = [];
+
+  for (let i = 0; i < arr.length; i += 2) {
+
+    newArr.push(arr[i] + arr[i + 1])
+
+  }
+  return newArr
+}
+
+console.log(splitString('123456'))
+console.log(splitString('ab cd ef')); // ['ab', ' c', 'd ', 'ef']
+console.log(splitString('abc')); // ['ab', 'c_']
+console.log(splitString(' ')); // [' _']
+console.log(splitString('')); // []
+```
