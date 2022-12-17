@@ -375,19 +375,19 @@ function splitString(str) {
     str = str + "_";
   }
   
-  let arr = str.split('')
+  let arr = str.split('');
   let newArr = [];
 
   for (let i = 0; i < arr.length; i += 2) {
-    newArr.push(arr[i] + arr[i + 1])
+    newArr.push(arr[i] + arr[i + 1]);
   }
   
-  return newArr
+  return newArr;
 }
 
-console.log(splitString('123456'))
-console.log(splitString('ab cd ef')); // ['ab', ' c', 'd ', 'ef']
-console.log(splitString('abc')); // ['ab', 'c_']
-console.log(splitString(' ')); // [' _']
-console.log(splitString('')); // []
+splitString('123456'); // ['12', '34', '56']
+splitString('ab cd ef'); // ['ab', ' c', 'd ', 'ef']
+splitString('abc'); // ['ab', 'c_']
+splitString(' '); // [' _']
+splitString(''); // []
 ```
