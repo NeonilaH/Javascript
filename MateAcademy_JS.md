@@ -412,3 +412,26 @@ function scrollingText(word) {
 
 scrollingText('robot');
 ```
+7. Create the `isSpecialNumber` function that accepts the positive number — `n`, and determines if it is special.
+A number is special if each of its digits is not greater than `5` (`0`, `1`, `2`, `3`, `4` or `5`).
+The function should return the `'Special!!'` string if the number is special, and `'NOT!!'` otherwise.
+```js
+function isSpecialNumber(n) {
+  let str = n.toString();
+
+  for (let i = 0; i < str.length; i++) {
+
+    if (str[i] <= 5) {
+      continue;
+    }
+    else {
+      return 'NOT!!';
+    }
+
+  }
+  return 'Special!!';
+}
+
+isSpecialNumber(23); // 'Special!!'
+isSpecialNumber(38); // 'NOT!!'
+```
