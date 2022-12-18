@@ -449,3 +449,27 @@ isTidy(12); // true
 isTidy(32); // false
 isTidy(3445); // true
 ```
+9. Implement the `isJumping` function, that accepts the `number` and returns the `'JUMPING'` string if each digit in the `number` differs from its neighbor by `1` or `'NOT JUMPING'` otherwise. Please note:
+the input number is always positive;
+the difference between `9` and `0` is not `1`;
+if there are identical digits nearby, the number is `'NOT JUMPING'`;
+if the number has only one digit — it is `'JUMPING'`.
+```js
+function isJumping(number) {
+  let str = number.toString();
+
+  for (let i = 1; i < str.length; i++) {
+    let diff = str[i] - str[i - 1];
+
+    if (Math.abs(diff) !== 1) {
+      return 'NOT JUMPING';
+    }
+  }
+
+  return 'JUMPING';
+}
+
+isJumping(9); // 'JUMPING'
+isJumping(7889); // 'NOT JUMPING'
+isJumping(23454); // 'JUMPING'
+```
