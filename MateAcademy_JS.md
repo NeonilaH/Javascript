@@ -431,3 +431,21 @@ function isSpecialNumber(n) {
 console.log(isSpecialNumber(23)); // 'Special!!'
 console.log(isSpecialNumber(38)); // 'NOT!!'
 ```
+8. Implement the `isTidy` function that accepts the positive number and returns `true` if it's tidy and `false` otherwise.
+```js
+function isTidy(number) {
+  let str = number.toString();
+
+  for (let i = 1; i <= str.length; i++){
+    if (str[i] < str[i - 1]){
+      return false;
+    }
+  }
+
+  return true;
+}
+
+isTidy(12); // true
+isTidy(32); // false
+isTidy(3445); // true
+```
