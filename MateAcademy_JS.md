@@ -21,6 +21,7 @@ isSubstring('string', 'bring'); // false
 ```js
 function countMs(text) {
     var count = 0;
+    
     for (let letter of text) {
         if (letter === 'M' || letter === 'm') {
             count++;
@@ -53,6 +54,7 @@ removeVowels('document'); //dcmnt
 ```js
 function makeAbbr(words) {
   let abbreviation = words[0];
+  
   for (let i = 0; i < words.length; i++) {
     if (words[i] === ' ') {
       abbreviation += words[i + 1];
@@ -67,8 +69,8 @@ makeAbbr('national aeronautics space administration'); // NASA
 6. Create the `decryptMessage` function that accepts the `message` string and returns a string with the characters from the `message` but in the reverse order.
 ```js
 function decryptMessage(message) {
-
   let result = '';
+  
   for (let i = message.length - 1; i >= 0; i--) {
     result += message[i];
   }
@@ -82,6 +84,7 @@ decryptMessage('central processing unit'); // tinu gnissecorp lartnec
 ```js
 function isWerewolf(target) {
   var result = '';
+  
   for (let letter of target) {
     if ((!' '.includes(letter)) && (letter.toLowerCase() !== letter.toUpperCase())) {
       result += letter.toUpperCase();
@@ -232,6 +235,7 @@ If the number of robots is a fraction, round it down using the `Math.floor`.
 function getPlan(startProduction, numberOfMonths, percent) {
     const goals = [];
     let currentProduction = startProduction;
+    
     for (i = 1; i <= numberOfMonths; i++) {
         currentProduction += Math.floor(currentProduction * percent / 100);
         goals.push(currentProduction);
